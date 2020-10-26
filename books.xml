@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href ="mycss.css" type="text/css"?>
+<books>
+<heading>文觀書房</heading>
+<book>
+<title>日本之旅</title>
+<author>梁語婕</author>
+<publisher>聯大出版社</publisher>
+<price>$300</price>
+</book>
+
+<book>
+<title>荷蘭之旅</title>
+<author>梁語婕</author>
+<publisher>聯大出版社</publisher>
+<price>$500</price>
+</book>
+</books>
