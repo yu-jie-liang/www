@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tw"><head> 
+        <meta charset="UTF-8">
+        <title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+
+.full-screen{
+ position:fixed;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ background:rgba(255,160,35,0.6);
+ z-index:10;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+
+
+p{
+           color:Tangerine;
+           margin:5px;
+           cursor:pointer;
+
+}
+p:hover{
+           background:seashell;
+}
+
+h1{
+           color:Coffee;
+          
+
+}
+
+
+.close{
+ position: absolute;
+ z-index:11;
+ right: 50px;
+ top: 50px;
+ width: 50px;
+ height: 50px; 
+ background: LightSlateGray;
+ border-radius: 25px; 
+ cursor: pointer;
+
+}
+.close:hover {
+ background: red;
+}
+
+.close:before {
+ position: absolute;
+ content: ''; 
+ width: 30px;
+ height: 10px; 
+ background: white; 
+ transform: rotate(45deg); 
+ top: 20px; left: 10px;
+
+}
+.close:after{
+ content: '';
+ position: absolute;
+ width: 30px;
+ height: 10px;
+ background: white; 
+ transform: rotate(-45deg);
+ top: 20px;
+ left: 10px;
+}
+
+</style>
+</head>
+
+<body>
+<h1>星巴克經典口味「栗香蒙布朗風味那堤」回歸！</h1>
+<p>栗香白巧克力糖醬搭配經典義式濃縮與香滑牛奶太適合冬天熱熱喝！</p>
+
+
+
+<div class="full-screen" align="center" style="">
+<img src="img/新品.jpg">
+</div>
+
+
+ 
+
+
+
+
+
+<div class="close" style="">
+</div>
+<script>
+
+$("p").click(function(){
+ $(".full-screen").slideToggle();
+});
+
+
+$("p").click(function(){
+ $(".close").slideToggle();
+});
+
+
+$(".close").click(function(){
+ $(".full-screen").slideToggle();
+});
+
+
+$(".close").click(function(){
+ $(".close").slideToggle();
+});
+
+
+</script>
+
+
+
+
+
+</body></html>
