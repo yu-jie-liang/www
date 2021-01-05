@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lan="tw">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+.full-screen{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,160,35,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+p{
+      color:red;
+      margin:px;
+      cursor:pointer;
+}
+p:hover{
+         background:yellow;
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+<p>本日特賣</p>
+<div class="full-screen">
+
+<h1>
+<br>在寒冷的冬天~</br>
+<br>快來嚐嚐蒙古麻辣鍋</br>
+<br>火辣你的心!</br>
+<br>溫暖你的胃!!!</br></h1>
+<img src="https://yu-jie-liang.github.io/www/%E6%96%B0%E5%93%81%E4%B8%8A%E5%B8%82.jpg"width="340"height="540">
+</div>
+<script>
+$("p").click(function(){$(".full-screen").slideToggle();});
+
+
+$("img").click(function(){$(".full-screen").slideToggle();});
+
+
+</script>
+
+</body>
+
+</html>
